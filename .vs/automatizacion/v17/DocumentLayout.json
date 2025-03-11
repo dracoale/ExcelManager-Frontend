@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\automatizacion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\file\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\file\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T16:31:18.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "upload.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\upload.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\File\\upload.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\upload.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\File\\upload.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwHAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T20:45:03.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T19:40:48.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "automatizacion\\Controllers\\FileController.cs",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileController.cs",
+              "RelativeToolTip": "automatizacion\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:59:08.751Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
