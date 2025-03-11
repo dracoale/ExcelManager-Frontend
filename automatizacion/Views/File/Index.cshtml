@@ -4,10 +4,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Subir Archivo</h2>
+<h2>Subir Archivo xlsx</h2>
 
-<form asp-controller="File" asp-action="upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" required />
-    <button type="submit">Subir</button>
+<div class=" container-fluid">
+<form asp-controller="File" asp-action="upload" method="post" enctype="multipart/form-data" class="d-flex gap-2">
+    <input type="file" name="file" class="form-control" required />
+    <button type="submit" class="btn btn-primary"> Subir </button>
 </form>
 
+</div>

@@ -5,76 +5,57 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="text-center mt-4">Subir Archivo CSV</h1>
+<h1 class="text-center mt-4">Dividir Columnas en Diferentes Hojas</h1>
 
 <div class="container">
-    <form asp-action="ProcesarSeleccion" method="post">
-        <table class="table table-bordered table-striped mt-3">
-            <thead class="table-dark">
+    <h1 class="text-center mt-4">Acciones</h1>
+    <h5>Selecciona cuántas hojas quieres y luego asigna las columnas:</h5>
+
+    <!-- Formulario para ingresar la cantidad de hojas -->
+    <form id="hojasForm">
+        <div>
+            <label>Cantidad de hojas:</label>
+            <input type="number" id="cantidadHojas" min="1" value="2" class="form-control" />
+        </div>
+    </form>
+
+    <!-- Formulario principal para asignar columnas a hojas -->
+    <form method="post" asp-action="GuardarDividir" id="Formulario">
+        <table class="table">
+            <thead>
                 <tr>
-                    <th>Seleccionar</th>
-                    <th>Encabezado</th>
+                    <th>Columna</th>
+                    <th>Seleccionar Hoja</th>
                 </tr>
             </thead>
             <tbody>
-                @for (int i = 0; i < Model.header.Count; i++)
+                @foreach (var columna in Model.header)
                 {
                     <tr>
+                        <td>@columna</td>
                         <td>
-                            <input type="checkbox" name="selectedHeaders" value="@Model.header[i]" class="form-check-input">
+                            <select name="seleccionados[@columna]" class="form-select hoja-select">
+                                <!-- Opciones de hojas se llenarán dinámicamente -->
+                            </select>
                         </td>
-                        <td>@Model.header[i]</td>
                     </tr>
                 }
             </tbody>
         </table>
-
-        <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary">Limpiar y Procesar</button>
-        </div>
-    </form>
-
-    <h1 class="text-center mt-4">Acciones</h1>
-    <h5>Selecciona las columnas y en qué hoja las quieres guardar:</h5>
-    <form method="post" asp-action="GuardarDividir" asp-controller="File" id="miFormulario">
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Columna</th>
-                <th>Seleccionar Hoja</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Estas filas se llenarán dinámicamente con JavaScript -->
-            @foreach (var item in Model.header) {
-                <tr>
-                    <td>@item</td>
-                <td>
-                            <select name="seleccionados[@item]" class="form-select">
-                        <option value="Hoja 1">Hoja 1</option>
-                        <option value="Hoja 2">Hoja 2</option>
-                        
-                    </select>
-                </td>
-            </tr>
-            }
-            
-        </tbody>
-        </table>
-        <button id="btnDividir" type="submit" class="btn btn-success mt-3">
+        <button  class="btn btn-success mt-3">
             <span id="btnText">Dividir Excel</span>
             <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none"></span>
         </button>
     </form>
 
-    <!-- Botón para ejecutar la división -->
-    
+
+
     
 </div>
 @section Scripts {
 <script>
         $(document).ready(function () {
-            $("#miFormulario").submit(function (event) {
+            $("#Formulgario").submit(function (event) {
                 event.preventDefault(); // Evita la recarga de la página
 
                 var formData = new FormData(this);
@@ -93,12 +74,9 @@
                         responseType: 'blob' // Recibir la respuesta como un archivo
                     },
                     success: function (data, status, xhr) {
-                        // Obtener el nombre del archivo desde los headers si es posible
-                        var filename = "archivo_resultado.xlsx";
-                        var disposition = xhr.getResponseHeader("Content-Disposition");
-                        if (disposition && disposition.indexOf("filename=") !== -1) {
-                            filename = disposition.split("filename=")[1].trim();
-                        }
+                        
+                        var filename = "arch.xlsx";
+                      
 
                         // Crear un Blob y un enlace de descarga
                         var blob = new Blob([data], { type: xhr.getResponseHeader("Content-Type") });
@@ -122,6 +100,30 @@
                 });
             });
         });
+           
+        document.addEventListener("DOMContentLoaded", function () {
+            const cantidadHojasInput = document.getElementById("cantidadHojas");
+
+            function actualizarSelects() {
+                let cantidad = parseInt(cantidadHojasInput.value) || 1;
+                let opciones = "";
+
+                for (let i = 1; i <= cantidad; i++) {
+                    opciones += `<option value="Hoja ${i}">Hoja ${i}</option>`;
+                }
+
+                document.querySelectorAll(".hoja-select").forEach(select => {
+                    select.innerHTML = opciones;
+                });
+            }
+
+            
+            actualizarSelects();
+
+            // Escuchar cambios en el input de cantidad de hojas
+            cantidadHojasInput.addEventListener("input", actualizarSelects);
+        });
+   
 
 </script>
 }

@@ -229,3 +229,4 @@ D:\c#\automatizacion\automatizacion\obj\Debug\net8.0\refint\automatizacion.dll
 D:\c#\automatizacion\automatizacion\obj\Debug\net8.0\automatizacion.pdb
 D:\c#\automatizacion\automatizacion\obj\Debug\net8.0\automatizacion.genruntimeconfig.cache
 D:\c#\automatizacion\automatizacion\obj\Debug\net8.0\ref\automatizacion.dll
+D:\c#\automatizacion\automatizacion\obj\Debug\net8.0\automatizacion.sourcelink.json

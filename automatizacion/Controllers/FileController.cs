@@ -85,17 +85,16 @@ namespace automatizacion.Controllers
             fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
             content.Add(fileContent, "file", "archivo.xlsx");
 
-            // URL de FastAPI
-            string fastApiUrl = "http://localhost:8000/dividir";
+           
 
-            // Enviar POST a FastAPI
-            HttpResponseMessage response = await _httpClient.PostAsync(fastApiUrl, content);
+           
+            HttpResponseMessage response = await _httpClient.PostAsync("http://localhost:8000/dividir", content);
 
             if (response.IsSuccessStatusCode)
             {
-                // Recibir archivo de respuesta
+                
                 byte[] fileBytes = await response.Content.ReadAsByteArrayAsync();
-                return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "archivo_resultado.xlsx");
+                return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "archivo_Convertido.xlsx");
             }
             else
             {
