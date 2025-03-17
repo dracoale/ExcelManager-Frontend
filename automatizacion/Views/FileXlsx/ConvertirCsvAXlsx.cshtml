@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "ConvertirCsvAXlsx";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">🔥 Convertir CSV a Excel 🔥</h2>
+
+    <!-- Sección de subida de archivos -->
+    <div class="card shadow-sm p-4 mb-4">
+        @await Html.PartialAsync("_UploadFile")
+    </div>
+
+    <!-- Formulario para ingresar el nombre -->
+    <div class="card shadow-sm p-4">
+        <form asp-action="ConvertirCsvAXlsx" method="post">
+            <div class="mb-3">
+                <label for="confrom" class="form-label">Ingrese un nombre:</label>
+                <input type="text" id="confrom" name="confrom" class="form-control" placeholder="Ejemplo: archivo1">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Convertir</button>
+        </form>
+    </div>
+</div>
+
+

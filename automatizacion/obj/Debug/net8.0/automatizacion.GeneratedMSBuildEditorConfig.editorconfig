@@ -28,12 +28,24 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/c\#/automatizacion/automatizacion/Views/File/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVxJbmRleC5jc2h0bWw=
+[D:/c\#/automatizacion/automatizacion/Views/FileXlsx/ConvertirCsvAXlsx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVhsc3hcQ29udmVydGlyQ3N2QVhsc3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/automatizacion/automatizacion/Views/File/upload.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVx1cGxvYWQuY3NodG1s
+[D:/c\#/automatizacion/automatizacion/Views/FileXlsx/DividirEnHojas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVhsc3hcRGl2aWRpckVuSG9qYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/automatizacion/automatizacion/Views/FileXlsx/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVhsc3hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/automatizacion/automatizacion/Views/FileXlsx/MostrarHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVhsc3hcTW9zdHJhckhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/automatizacion/automatizacion/Views/FileXlsx/UnirXlsx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVhsc3hcVW5pclhsc3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c\#/automatizacion/automatizacion/Views/Home/Index.cshtml]
@@ -46,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/c\#/automatizacion/automatizacion/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/automatizacion/automatizacion/Views/Shared/_UploadFile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VcGxvYWRGaWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c\#/automatizacion/automatizacion/Views/Shared/_ValidationScriptsPartial.cshtml]

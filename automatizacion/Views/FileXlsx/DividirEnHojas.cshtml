@@ -1,61 +1,71 @@
-﻿@model automatizacion.Models.FileCsv
-
+﻿@model automatizacion.Models.FileXlsx
 @{
-    ViewData["Title"] = "upload";
+    ViewData["Title"] = "DividirEnHojas";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="text-center mt-4">Dividir Columnas en Diferentes Hojas</h1>
 
-<div class="container">
-    <h1 class="text-center mt-4">Acciones</h1>
-    <h5>Selecciona cuántas hojas quieres y luego asigna las columnas:</h5>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">🔥 Dividir En Hojas 🔥</h2>
 
-    <!-- Formulario para ingresar la cantidad de hojas -->
-    <form id="hojasForm">
-        <div>
-            <label>Cantidad de hojas:</label>
-            <input type="number" id="cantidadHojas" min="1" value="2" class="form-control" />
+    <!-- Sección de subida de archivos -->
+    <div class="card shadow-sm p-4 mb-4">
+        @await Html.PartialAsync("_UploadFile", "DividirEnHojas")
+    </div>
+
+    <!-- Formulario para ingresar el nombre -->
+    @if (Model.header !=null){
+    <div class="card shadow-sm p-4">
+        <div class="container">
+            <h1 class="text-center mt-4">Acciones</h1>
+            <h5>Selecciona cuántas hojas quieres y luego asigna las columnas:</h5>
+
+            <!-- Formulario para ingresar la cantidad de hojas -->
+            <form id="hojasForm">
+                <div>
+                    <label>Cantidad de hojas:</label>
+                    <input type="number" id="cantidadHojas" min="1" value="2" class="form-control" />
+                </div>
+            </form>
+
+            <!-- Formulario principal para asignar columnas a hojas -->
+                <form method="post" asp-action="DividirEnHojas" id="Formulario">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Columna</th>
+                            <th>Seleccionar Hoja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var columna in Model.header)
+                        {
+                            <tr>
+                                <td>@columna</td>
+                                <td>
+                                    <select name="seleccionados[@columna]" class="form-select hoja-select">
+                                        <!-- Opciones de hojas se llenarán dinámicamente -->
+                                    </select>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                    <button  class="btn btn-success mt-3">
+                    <span id="btnText">Dividir Excel</span>
+                    <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none"></span>
+                </button>
+            </form>
+    </div>
+
         </div>
-    </form>
-
-    <!-- Formulario principal para asignar columnas a hojas -->
-    <form method="post" asp-action="GuardarDividir" id="Formulario">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Columna</th>
-                    <th>Seleccionar Hoja</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var columna in Model.header)
-                {
-                    <tr>
-                        <td>@columna</td>
-                        <td>
-                            <select name="seleccionados[@columna]" class="form-select hoja-select">
-                                <!-- Opciones de hojas se llenarán dinámicamente -->
-                            </select>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-        <button  class="btn btn-success mt-3">
-            <span id="btnText">Dividir Excel</span>
-            <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none"></span>
-        </button>
-    </form>
-
-
-
-    
+    }
 </div>
+
 @section Scripts {
-<script>
+    <script>
         $(document).ready(function () {
-            $("#Formulgario").submit(function (event) {
+            $("#Formulario").submit(function (event) {
                 event.preventDefault(); // Evita la recarga de la página
 
                 var formData = new FormData(this);
@@ -65,7 +75,7 @@
                 $("#loadingSpinner").removeClass("d-none");
 
                 $.ajax({
-                    url: "/File/GuardarDividir",
+                    url: "/FileXlsx/DividirEnHojas",
                     type: "POST",
                     data: formData,
                     contentType: false,
@@ -74,9 +84,9 @@
                         responseType: 'blob' // Recibir la respuesta como un archivo
                     },
                     success: function (data, status, xhr) {
-                        
+
                         var filename = "arch.xlsx";
-                      
+
 
                         // Crear un Blob y un enlace de descarga
                         var blob = new Blob([data], { type: xhr.getResponseHeader("Content-Type") });
@@ -100,7 +110,7 @@
                 });
             });
         });
-           
+
         document.addEventListener("DOMContentLoaded", function () {
             const cantidadHojasInput = document.getElementById("cantidadHojas");
 
@@ -117,13 +127,13 @@
                 });
             }
 
-            
+
             actualizarSelects();
 
             // Escuchar cambios en el input de cantidad de hojas
             cantidadHojasInput.addEventListener("input", actualizarSelects);
         });
-   
 
-</script>
+
+    </script>
 }

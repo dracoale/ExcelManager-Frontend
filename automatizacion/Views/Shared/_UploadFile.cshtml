@@ -1,0 +1,14 @@
+﻿
+@model string
+
+
+<form asp-controller="FileXlsx" asp-action="Upload" method="post" enctype="multipart/form-data" class="d-flex gap-2">
+    <div class="input-group">
+        <input type="file" class="form-control" name="file" aria-label="Upload">
+        <input type="hidden" name="action" value="@Model">
+
+        <button class="btn btn-outline-primary" >Subir 📂</button>
+    </div>
+
+</form>
+

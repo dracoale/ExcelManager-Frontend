@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center fw-bold mt-4 text-primary">
+    🔥 Bienvenido a <span class="text-success">Excel Manager</span> 🔥
+</h2>
+
+<div class=" container">
+
+   
+
+
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <a asp-controller="FileXlsx" asp-action="DividirEnHojas" class="btn btn-primary btn-lg w-100">Dividir Excel en hojas</a>
+            </div>
+
+            <div class="col-md-4">
+                <a asp-controller="FileXlsx" asp-action="ConvertirCsvAXlsx" class="btn btn-success btn-lg w-100">Convertir csv a xlsx</a>
+            </div>
+            <div class="col-md-4">
+                <a asp-controller="FileXlsx" asp-action="UnirXlsx" class="btn btn-info btn-lg w-100">Unir Archivos xlsx</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a asp-controller="Excel" asp-action="Pronto ..." class="btn btn-info btn-lg w-100">Pronto ...</a>
+            </div>
+            <div class="col-md-4">
+                <a asp-controller="Excel" asp-action=" Pronto ..." class="btn btn-danger btn-lg w-100">Pronto ...</a>
+            </div>
+            <div class="col-md-4">
+                <a asp-controller="Excel" asp-action=" Pronto ..." class="btn btn-dark btn-lg w-100">Pronto ...</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+@section Scripts{
+    <script>
+    @if (TempData["ErrorMessage"] != null)
+    {
+        int errorMessage = Convert.ToInt32(TempData["ErrorMessage"]);
+
+        if (errorMessage == 1)
+        {
+            <text>
+                            toastr.success('Se subio el archivo', { positionClass: 'toast-top-right' });
+            </text>
+        }
+        else
+        {
+
+            <text>
+            toastr.success('No |Se subio el archivo', 'Éxito', { positionClass: 'toast-top-right' });
+            </text>
+        }
+
+    }
+    </script>
+
+}

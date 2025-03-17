@@ -1,6 +1,16 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Expiración de la sesión
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 var app = builder.Build();
@@ -12,12 +22,17 @@ if (!app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 
+
+app.UseSession();
+
+
+
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=FileXlsx}/{action=Index}/{id?}");
 
 app.Run();

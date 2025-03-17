@@ -1,4 +1,4 @@
-﻿@model IEnumerable<automatizacion.Models.FileCsv>
+﻿@model IEnumerable<automatizacion.Models.FileXlsx>
 
 @{
     ViewData["Title"] = "View";
@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.encabezado)
+                @* @Html.DisplayNameFor(model => model.encabezado) *@
             </th>
             <th></th>
         </tr>
@@ -23,7 +23,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.encabezado)
+                @* @Html.DisplayFor(modelItem => item.encabezado) *@
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

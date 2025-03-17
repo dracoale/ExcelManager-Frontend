@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "D:\\c#\\automatizacion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\file\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\file\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\controllers\\filexlsxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\controllers\\filexlsxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\models\\filecsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\models\\filecsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\filexlsx\\unirxlsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\filexlsx\\unirxlsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\filexlsx\\convertircsvaxlsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\filexlsx\\convertircsvaxlsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\models\\filexlsx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\models\\filexlsx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\filexlsx\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\filexlsx\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\_uploadfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\_uploadfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\filexlsx\\dividirenhojas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\filexlsx\\dividirenhojas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\filexlsx\\mostrarheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\filexlsx\\mostrarheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|d:\\c#\\automatizacion\\automatizacion\\views\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{188F6DEC-2731-4D59-B05F-BCAE073A16FB}|automatizacion\\automatizacion.csproj|solutionrelative:automatizacion\\views\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,94 +66,166 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileCsv.cs",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Models\\FileCsv.cs",
-              "RelativeDocumentMoniker": "automatizacion\\Models\\FileCsv.cs",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Models\\FileCsv.cs",
-              "RelativeToolTip": "automatizacion\\Models\\FileCsv.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FileXlsx.cs",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Models\\FileXlsx.cs",
+              "RelativeDocumentMoniker": "automatizacion\\Models\\FileXlsx.cs",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Models\\FileXlsx.cs",
+              "RelativeToolTip": "automatizacion\\Models\\FileXlsx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T22:51:21.591Z",
+              "WhenOpened": "2025-03-15T17:25:05.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "automatizacion\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "automatizacion\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "ConvertirCsvAXlsx.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\ConvertirCsvAXlsx.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\FileXlsx\\ConvertirCsvAXlsx.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\ConvertirCsvAXlsx.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\FileXlsx\\ConvertirCsvAXlsx.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T22:32:33.878Z",
+              "WhenOpened": "2025-03-15T19:36:56.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_UploadFile.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_UploadFile.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\_UploadFile.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_UploadFile.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\Shared\\_UploadFile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T20:33:07.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\Index.cshtml",
-              "RelativeDocumentMoniker": "automatizacion\\Views\\File\\Index.cshtml",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\Index.cshtml",
-              "RelativeToolTip": "automatizacion\\Views\\File\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\Index.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\FileXlsx\\Index.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\Index.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\FileXlsx\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-11T22:26:58.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "automatizacion\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T16:31:18.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "upload.cshtml",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\upload.cshtml",
-              "RelativeDocumentMoniker": "automatizacion\\Views\\File\\upload.cshtml",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\File\\upload.cshtml",
-              "RelativeToolTip": "automatizacion\\Views\\File\\upload.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T20:45:03.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "automatizacion\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAA4AAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T19:40:48.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "automatizacion\\Controllers\\FileController.cs",
-              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileController.cs",
-              "RelativeToolTip": "automatizacion\\Controllers\\FileController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwGgAAAABAAAAAAAAAA==",
+              "Title": "FileXlsxController.cs",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileXlsxController.cs",
+              "RelativeDocumentMoniker": "automatizacion\\Controllers\\FileXlsxController.cs",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\FileXlsxController.cs*",
+              "RelativeToolTip": "automatizacion\\Controllers\\FileXlsxController.cs*",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAlwNIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T17:59:08.751Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnirXlsx.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\UnirXlsx.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\FileXlsx\\UnirXlsx.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\UnirXlsx.cshtml*",
+              "RelativeToolTip": "automatizacion\\Views\\FileXlsx\\UnirXlsx.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T23:19:35.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DividirEnHojas.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\DividirEnHojas.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\FileXlsx\\DividirEnHojas.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\DividirEnHojas.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\FileXlsx\\DividirEnHojas.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T21:04:00.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MostrarHeader.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\MostrarHeader.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\FileXlsx\\MostrarHeader.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\FileXlsx\\MostrarHeader.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\FileXlsx\\MostrarHeader.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T20:45:03.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T22:26:50.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Program.cs",
+              "RelativeDocumentMoniker": "automatizacion\\Program.cs",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Program.cs",
+              "RelativeToolTip": "automatizacion\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T18:09:03.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T21:01:08.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "automatizacion\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "automatizacion\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:42:35.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "D:\\c#\\automatizacion\\automatizacion\\Views\\View.cshtml",
+              "RelativeDocumentMoniker": "automatizacion\\Views\\View.cshtml",
+              "ToolTip": "D:\\c#\\automatizacion\\automatizacion\\Views\\View.cshtml",
+              "RelativeToolTip": "automatizacion\\Views\\View.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAawBkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T21:33:47.836Z"
             }
           ]
         }

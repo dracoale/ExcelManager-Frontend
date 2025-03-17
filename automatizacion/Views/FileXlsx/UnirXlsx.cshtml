@@ -1,0 +1,80 @@
+﻿@model IEnumerable<automatizacion.Models.FileXlsx>
+@{
+    ViewData["Title"] = "UnirXlsx";
+    var listaArchivos = Model?.ToList();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>UnirXlsx</h1>
+<div class="container mt-5">
+    <div class="card shadow-lg p-4">
+        <h3 class="text-center mb-4">📂 Subir y Unir Archivos Excel</h3>
+        <form asp-controller="FileXlsx" asp-action="Upload" method="post" enctype="multipart/form-data" >
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">📁 Selecciona Archivo 1:</label>
+                <input type="hidden" name="numFile" value="0">
+                <input type="hidden" name="action" value="UnirXlsx">
+
+                <input type="file" class="form-control" name="file" required>
+                <button class="btn btn-outline-primary">Subir 📂</button>
+            </div>
+        </form>
+                <form asp-controller="FileXlsx" asp-action="Upload" method="post" enctype="multipart/form-data" >
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">📁 Selecciona Archivo 2:</label>
+                <input type="hidden" name="numFile" value="1">
+                <input type="hidden" name="action" value="UnirXlsx">
+                <input type="file" class="form-control" name="file" required>
+                <button class="btn btn-outline-primary">Subir 📂</button>
+        
+            </div>
+        </form>
+            @if (listaArchivos !=null){
+            <div class="mb-3">
+                <h5>📂 Columnas del Archivo 1:</h5>
+                @if (listaArchivos.Count > 0) 
+                {
+                    @foreach (var col in listaArchivos[0].header)
+                    {
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="ColumnasSeleccionadas[]" value="@col">
+                            <label class="form-check-label">@col</label>
+                        </div>
+                    }
+                }
+            </div>
+
+            <div class="mb-3">
+                <h5>📂 Columnas del Archivo 2:</h5>
+                @if (listaArchivos.Count > 1) 
+                {
+                    @foreach (var col in listaArchivos[1].header)
+                    {
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="ColumnasSeleccionadas[]" value="@col">
+                            <label class="form-check-label">@col</label>
+                        </div>
+                    }
+                }
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">❌ Eliminar duplicados:</label>
+                <select name="eliminar_duplicados" class="form-select">
+                    <option value="No" selected>No</option>
+                    <option value="Sí">Sí</option>
+                </select>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">
+                    🚀 Subir y Unir Archivos
+                </button>
+            </div>
+            }
+        
+    </div>
+    
+</div>
