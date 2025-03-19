@@ -31,34 +31,36 @@
         
             </div>
         </form>
-            @if (listaArchivos !=null){
-            <div class="mb-3">
-                <h5>📂 Columnas del Archivo 1:</h5>
-                @if (listaArchivos.Count > 0) 
-                {
-                    @foreach (var col in listaArchivos[0].header)
+ @if (listaArchivos!=null ){
+            <form asp-controller="FileXlsx"  asp-action="UnirXlsx" method="post">
+        <div class="mb-3">
+             
+            <h5>📂 Columnas del Archivo 1:</h5>
+                    @if (listaArchivos.Count > 0)
                     {
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="ColumnasSeleccionadas[]" value="@col">
-                            <label class="form-check-label">@col</label>
-                        </div>
+                        @foreach (var col in listaArchivos[0].header)
+                        {
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="archivo1" value="@col">
+                                <label class="form-check-label">@col</label>
+                            </div>
+                        }
                     }
-                }
-            </div>
+                </div>
 
-            <div class="mb-3">
-                <h5>📂 Columnas del Archivo 2:</h5>
-                @if (listaArchivos.Count > 1) 
-                {
-                    @foreach (var col in listaArchivos[1].header)
+                <div class="mb-3">
+                    <h5>📂 Columnas del Archivo 2:</h5>
+                    @if (listaArchivos.Count > 1)
                     {
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="ColumnasSeleccionadas[]" value="@col">
-                            <label class="form-check-label">@col</label>
-                        </div>
+                        @foreach (var col in listaArchivos[1].header)
+                        {
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="archivo2" value="@col">
+                                <label class="form-check-label">@col</label>
+                            </div>
+                        }
                     }
-                }
-            </div>
+        </div>
 
             <div class="mb-3">
                 <label class="form-label fw-bold">❌ Eliminar duplicados:</label>
@@ -69,12 +71,13 @@
             </div>
 
             <div class="d-grid">
-                <button type="submit" class="btn btn-primary">
+                <button  class="btn btn-primary">
                     🚀 Subir y Unir Archivos
                 </button>
             </div>
-            }
-        
+
+        </form>
+         }
     </div>
-    
+   
 </div>

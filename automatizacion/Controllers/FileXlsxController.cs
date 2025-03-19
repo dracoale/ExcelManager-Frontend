@@ -7,6 +7,8 @@ using System.Text;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Diagnostics;
 namespace automatizacion.Controllers
 {
     public class FileXlsxController : Controller
@@ -35,11 +37,18 @@ namespace automatizacion.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Upload(IFormFile file, IFormFile file2, string action, int numFile=0)
+        public async Task<IActionResult> Upload(IFormFile file, IFormFile file2, string action, int numFile = 0)
         {
+            var usuarioJson = HttpContext.Session.GetString("FileXlsxList");
+            if (usuarioJson != null)
+            {
+                fileXlsxList = JsonConvert.DeserializeObject<List<FileXlsx>>(usuarioJson);
+                // Console.WriteLine(usuario.Nombre);  // Alexis
+            }
+
             if (file == null || file.Length == 0)
             {
-               // TempData["ErrorMessage"] = 0;
+                // TempData["ErrorMessage"] = 0;
                 return RedirectToAction("Index");
             }
 
@@ -47,7 +56,7 @@ namespace automatizacion.Controllers
             {
                 NombreFile = file.FileName
             };
-           
+
             // Guardar el archivo en memoria
             using (var memoryStream = new MemoryStream())
             {
@@ -59,12 +68,13 @@ namespace automatizacion.Controllers
 
 
             // Si el actionType es "headers", ejecuta la lógica de obtener headers
-                if(action == null)
-                {
+            if (action == null)
+            {
                 HttpContext.Session.SetString("FileXlsx", JsonConvert.SerializeObject(fileXlsx));
                 return NoContent();
-                }
-            else { 
+            }
+            else
+            {
                 using var content = new MultipartFormDataContent();
                 using var stream = new MemoryStream(fileXlsx.File);
                 var fileContent = new StreamContent(stream);
@@ -81,26 +91,26 @@ namespace automatizacion.Controllers
 
                 string result = await response.Content.ReadAsStringAsync();
 
-                 List<string> headers = JsonConvert.DeserializeObject<List<string>>(result);
-                fileXlsx.header =  headers ;
-                fileXlsxList.Insert(numFile,fileXlsx);
+                List<string> headers = JsonConvert.DeserializeObject<List<string>>(result);
+                fileXlsx.header = headers;
+                fileXlsxList.Insert(numFile, fileXlsx);
                 HttpContext.Session.SetString("FileXlsxList", JsonConvert.SerializeObject(fileXlsxList));
 
 
-                
+
                 return RedirectToAction(action); // Si solo se sube el archivo, vuelve al Index
-                }
             }
-        
+        }
+
 
 
         [HttpGet]
-        public  IActionResult DividirEnHojas()
+        public IActionResult DividirEnHojas()
         {
             var usuarioJson = HttpContext.Session.GetString("FileXlsxList");
             if (usuarioJson != null)
             {
-                fileXlsxList = JsonConvert.DeserializeObject< List < FileXlsx >> (usuarioJson);
+                fileXlsxList = JsonConvert.DeserializeObject<List<FileXlsx>>(usuarioJson);
                 // Console.WriteLine(usuario.Nombre);  // Alexis
             }
             return View(fileXlsxList[0]);
@@ -158,7 +168,7 @@ namespace automatizacion.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ConvertirCsvAXlsx(string nombre ="archivoConvertido")
+        public async Task<IActionResult> ConvertirCsvAXlsx(string nombre = "archivoConvertido")
         {
             var usuarioJson = HttpContext.Session.GetString("FileXlsxList");
             if (usuarioJson != null)
@@ -180,12 +190,14 @@ namespace automatizacion.Controllers
             var fileContent = new StreamContent(stream);
             fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
             content.Add(fileContent, "file", "archivo.csv");
+
+
             HttpResponseMessage response = await _httpClient.PostAsync("http://localhost:8000/convertir", content);
             if (response.IsSuccessStatusCode)
             {
 
                 byte[] fileBytes = await response.Content.ReadAsByteArrayAsync();
-                return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", nombre+".xlsx");
+                return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", nombre + ".xlsx");
             }
             else
             {
@@ -212,10 +224,68 @@ namespace automatizacion.Controllers
             return View(fileXlsxList);
         }
         [HttpPost]
-        public IActionResult UnirtXlsx()
+        public async Task<IActionResult> UnirXlsx(List<string> archivo1, List<string> archivo2, string eliminar_duplicados)
         {
+            var usuarioJson = HttpContext.Session.GetString("FileXlsxList");
+            if (usuarioJson != null)
+            {
+                fileXlsxList = JsonConvert.DeserializeObject<List<FileXlsx>>(usuarioJson);
+                // Console.WriteLine(usuario.Nombre);  // Alexis
+            }
 
-            return View();
+            using var content = new MultipartFormDataContent();
+
+            //// Agregar el JSON al formulario como texto
+            //var jsonContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            //content.Add(jsonContent, "columnas_hoja");
+
+            // Agregar el archivo al formulario
+            using var stream = new MemoryStream(fileXlsxList[0].File);
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+            content.Add(fileContent, "file1", "archivo.xlsx");
+
+            using var stream1 = new MemoryStream(fileXlsxList[1].File);
+            var fileContent1 = new StreamContent(stream1);
+            fileContent1.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+            content.Add(fileContent1, "file2", "archivo2.xlsx");
+
+
+            var diccionarioColumnas = new Dictionary<string, List<string>>();
+            int maxElementos = Math.Max(archivo1.Count, archivo2.Count);
+
+            for (int i = 0; i < maxElementos; i++)
+            {
+                string hojaKey = $"Hoja{i}"; // Nombre aleatorio
+
+                var columnas = new List<string>();
+
+                if (i < archivo1.Count)
+                    columnas.Add(archivo1[i]);
+
+                if (i < archivo2.Count)
+                    columnas.Add(archivo2[i]);
+
+                diccionarioColumnas[hojaKey] = columnas;
+            }
+            var jsonData = JsonConvert.SerializeObject(diccionarioColumnas);
+                var jsonContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                content.Add(jsonContent, "columnas");
+           
+
+                Console.WriteLine(jsonContent);
+                HttpResponseMessage response = await _httpClient.PostAsync("http://localhost:8000/unir-excel", content);
+                if (response.IsSuccessStatusCode)
+                {
+
+                    byte[] fileBytes = await response.Content.ReadAsByteArrayAsync();
+                    return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "unido" + ".xlsx");
+                }
+                else
+                {
+                    return BadRequest("Error al generar el archivo en FastAPI.");
+                }
+
+            }
         }
     }
-}
